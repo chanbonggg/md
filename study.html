@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레전드 심심</title>
+    <link rel="stylesheet" href="./letter.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+
+    <script>
+        function randomLetter() {
+            const randomLetters = [
+                "천박 퇴폐 미소녀.\n_최규하하 ",
+                "셀프 사까시\n_최규하하",
+                "식스해봐.\n_최규하",
+                "흠 좆\n_천진우",
+               
+            ];
+            const randomNum = Math.floor(Math.random() * 4);
+            document.getElementById("letter").style.display = "block";
+
+            document.getElementById("letter").innerText = randomLetters[randomNum];
+        }
+    </script>
+</head>
+<body>
+    <div class="title">
+        MD의 명언
+    </div>
+    
+
+    <main class="main">
+        <div id="letter"></div>
+        <button class="btn-show" onclick="randomLetter()">
+            눌러봐!!
+        </button>
+    </main>
+
+    <footer class="footer">
+        <div>made in chabongg</div>
+    </footer>
+</body>
+</html>
